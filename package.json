@@ -1,0 +1,12 @@
+{
+  "name": "frontend-technique",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:vue3/design-hooks": "pnpm --filter @vue3/design-hooks dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
