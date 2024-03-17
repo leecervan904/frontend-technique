@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev:@vue3/design-hooks": "pnpm --filter @vue3/design-hooks dev",
-    "dev:@react/router-v6": "pnpm --filter @react/router-v6 dev"
+    "dev:@react/router-v6": "pnpm --filter @react/router-v6 dev",
+    "dev:@react/redux-toolkit": "pnpm --filter @react/redux-toolkit dev"
   },
   "keywords": [],
   "author": "",
