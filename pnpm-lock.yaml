@@ -5,6 +5,39 @@ importers:
   .:
     specifiers: {}
 
+  demo-react/react-mobx:
+    specifiers:
+      '@types/react': ^18.2.64
+      '@types/react-dom': ^18.2.21
+      '@typescript-eslint/eslint-plugin': ^7.1.1
+      '@typescript-eslint/parser': ^7.1.1
+      '@vitejs/plugin-react': ^4.2.1
+      eslint: ^8.57.0
+      eslint-plugin-react-hooks: ^4.6.0
+      eslint-plugin-react-refresh: ^0.4.5
+      mobx: ^6.12.0
+      mobx-react-lite: ^4.0.6
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      typescript: ^5.2.2
+      vite: ^5.1.6
+    dependencies:
+      mobx: 6.12.0
+      mobx-react-lite: 4.0.6_992da15e4dd91f0a8001748335af3ee1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    devDependencies:
+      '@types/react': 18.2.66
+      '@types/react-dom': 18.2.22
+      '@typescript-eslint/eslint-plugin': 7.2.0_91801b2965055644fc09c742c9dc26f2
+      '@typescript-eslint/parser': 7.2.0_eslint@8.57.0+typescript@5.4.2
+      '@vitejs/plugin-react': 4.2.1_vite@5.1.6
+      eslint: 8.57.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.57.0
+      eslint-plugin-react-refresh: 0.4.6_eslint@8.57.0
+      typescript: 5.4.2
+      vite: 5.1.6
+
   demo-react/react-redux-toolkit:
     specifiers:
       '@reduxjs/toolkit': ^2.2.1
@@ -2370,6 +2403,29 @@ packages:
     dependencies:
       brace-expansion: 2.0.1
     dev: true
+
+  /mobx-react-lite/4.0.6_992da15e4dd91f0a8001748335af3ee1:
+    resolution: {integrity: sha512-0rOE0KDMwV9CzsstYC86ZxxrUpKLGBN0/T3WpKZibLnJcukdb9HVL8VKHoDxaBPbInLZ5azPKUod4mXTsi+u+A==}
+    peerDependencies:
+      mobx: ^6.9.0
+      react: ^16.8.0 || ^17 || ^18
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: 6.12.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
+  /mobx/6.12.0:
+    resolution: {integrity: sha512-Mn6CN6meXEnMa0a5u6a5+RKrqRedHBhZGd15AWLk9O6uFY4KYHzImdt8JI8WODo1bjTSRnwXhJox+FCUZhCKCQ==}
+    dev: false
 
   /ms/2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
