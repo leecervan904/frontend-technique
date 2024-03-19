@@ -8,7 +8,8 @@
     "dev:@react/router-v6": "pnpm --filter @react/router-v6 dev",
     "dev:@react/redux-toolkit": "pnpm --filter @react/redux-toolkit dev",
     "dev:@react/mobx": "pnpm --filter @react/mobx dev",
-    "dev:@react/state-zustand": "pnpm --filter @react/state-zustand dev"
+    "dev:@react/state-zustand": "pnpm --filter @react/state-zustand dev",
+    "dev:@react/state-jotai": "pnpm --filter @react/state-jotai dev"
   },
   "keywords": [],
   "author": "",

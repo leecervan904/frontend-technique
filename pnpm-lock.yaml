@@ -106,6 +106,37 @@ importers:
       typescript: 5.4.2
       vite: 5.1.6
 
+  demo-react/state-jotai:
+    specifiers:
+      '@types/react': ^18.2.64
+      '@types/react-dom': ^18.2.21
+      '@typescript-eslint/eslint-plugin': ^7.1.1
+      '@typescript-eslint/parser': ^7.1.1
+      '@vitejs/plugin-react': ^4.2.1
+      eslint: ^8.57.0
+      eslint-plugin-react-hooks: ^4.6.0
+      eslint-plugin-react-refresh: ^0.4.5
+      jotai: ^2.7.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      typescript: ^5.2.2
+      vite: ^5.1.6
+    dependencies:
+      jotai: 2.7.1_cb0f3f2e916afdebbc41c0698e99f426
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    devDependencies:
+      '@types/react': 18.2.66
+      '@types/react-dom': 18.2.22
+      '@typescript-eslint/eslint-plugin': 7.2.0_91801b2965055644fc09c742c9dc26f2
+      '@typescript-eslint/parser': 7.2.0_eslint@8.57.0+typescript@5.4.2
+      '@vitejs/plugin-react': 4.2.1_vite@5.1.6
+      eslint: 8.57.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.57.0
+      eslint-plugin-react-refresh: 0.4.6_eslint@8.57.0
+      typescript: 5.4.2
+      vite: 5.1.6
+
   demo-react/state-zustand:
     specifiers:
       '@types/react': ^18.2.64
@@ -2263,6 +2294,22 @@ packages:
   /isexe/2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
+
+  /jotai/2.7.1_cb0f3f2e916afdebbc41c0698e99f426:
+    resolution: {integrity: sha512-bsaTPn02nFgWNP6cBtg/htZhCu4s0wxqoklRHePp6l/vlsypR9eLn7diRliwXYWMXDpPvW/LLA2afI8vwgFFaw==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=17.0.0'
+      react: '>=17.0.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@types/react': 18.2.66
+      react: 18.2.0
+    dev: false
 
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
