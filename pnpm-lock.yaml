@@ -106,6 +106,37 @@ importers:
       typescript: 5.4.2
       vite: 5.1.6
 
+  demo-react/state-zustand:
+    specifiers:
+      '@types/react': ^18.2.64
+      '@types/react-dom': ^18.2.21
+      '@typescript-eslint/eslint-plugin': ^7.1.1
+      '@typescript-eslint/parser': ^7.1.1
+      '@vitejs/plugin-react': ^4.2.1
+      eslint: ^8.57.0
+      eslint-plugin-react-hooks: ^4.6.0
+      eslint-plugin-react-refresh: ^0.4.5
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      typescript: ^5.2.2
+      vite: ^5.1.6
+      zustand: ^4.5.2
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      zustand: 4.5.2_cb0f3f2e916afdebbc41c0698e99f426
+    devDependencies:
+      '@types/react': 18.2.66
+      '@types/react-dom': 18.2.22
+      '@typescript-eslint/eslint-plugin': 7.2.0_91801b2965055644fc09c742c9dc26f2
+      '@typescript-eslint/parser': 7.2.0_eslint@8.57.0+typescript@5.4.2
+      '@vitejs/plugin-react': 4.2.1_vite@5.1.6
+      eslint: 8.57.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.57.0
+      eslint-plugin-react-refresh: 0.4.6_eslint@8.57.0
+      typescript: 5.4.2
+      vite: 5.1.6
+
   demo-vue3/design-hooks:
     specifiers:
       '@arco-design/web-vue': ^2.54.6
@@ -3194,3 +3225,23 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zustand/4.5.2_cb0f3f2e916afdebbc41c0698e99f426:
+    resolution: {integrity: sha512-2cN1tPkDVkwCy5ickKrI7vijSjPksFRfqS6237NzT0vqSsztTNnQdHw9mmN7uBdk3gceVXU0a+21jFzFzAc9+g==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      '@types/react': '>=16.8'
+      immer: '>=9.0.6'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@types/react': 18.2.66
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
