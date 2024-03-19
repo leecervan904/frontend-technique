@@ -6,8 +6,8 @@
   "scripts": {
     "dev:@vue3/design-hooks": "pnpm --filter @vue3/design-hooks dev",
     "dev:@react/router-v6": "pnpm --filter @react/router-v6 dev",
-    "dev:@react/redux-toolkit": "pnpm --filter @react/redux-toolkit dev",
-    "dev:@react/mobx": "pnpm --filter @react/mobx dev",
+    "dev:@react/state-redux-toolkit": "pnpm --filter @react/state-redux-toolkit dev",
+    "dev:@react/state-mobx": "pnpm --filter @react/state-mobx dev",
     "dev:@react/state-zustand": "pnpm --filter @react/state-zustand dev",
     "dev:@react/state-jotai": "pnpm --filter @react/state-jotai dev"
   },
