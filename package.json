@@ -9,7 +9,9 @@
     "dev:@react/state-redux-toolkit": "pnpm --filter @react/state-redux-toolkit dev",
     "dev:@react/state-mobx": "pnpm --filter @react/state-mobx dev",
     "dev:@react/state-zustand": "pnpm --filter @react/state-zustand dev",
-    "dev:@react/state-jotai": "pnpm --filter @react/state-jotai dev"
+    "dev:@react/state-jotai": "pnpm --filter @react/state-jotai dev",
+    "dev:@react/component-design": "pnpm --filter @react/component-design dev",
+    "dev:@react/playground": "pnpm --filter @react/playground dev"
   },
   "keywords": [],
   "author": "",
