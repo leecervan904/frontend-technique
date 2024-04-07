@@ -1,3 +1,4 @@
 packages:
   - './demo-vue3/*'
   - './demo-react/*'
+  - './wujie'
