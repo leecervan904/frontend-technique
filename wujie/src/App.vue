@@ -37,6 +37,8 @@ const go = (path: string) => {
       </div>
     </h2>
 
+    <iframe src="http://localhost:8081/" frameborder="0"></iframe>
+
     <router-view></router-view>
   </div>
 </template>

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "start": "tsx watch ./server/main",
+    "start:dev": "tsx watch ./server/main",
+    "start": "tsx ./server/main",
     "postinstall": "prisma generate",
     "db:push": "prisma db push"
   },

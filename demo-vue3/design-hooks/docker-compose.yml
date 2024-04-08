@@ -1,0 +1,47 @@
+version: '3'
+services:
+  # app-vue3-design-hooks:
+  #   # image: fe-tech/app-vue3-design-hooks:latest
+  #   image: vue3-design-hooks:latest
+  #   platform: linux/arm64
+  #   restart: always
+  #   links:
+  #     - www-vue3-design-hooks
+  www-vue3-design-hooks:
+    # image: fe-tech/www-vue3-design-hooks:latest
+    image: www-vue3-design-hooks:latest
+    platform: linux/arm64
+    restart: always
+    ports:
+      - '3020:3020'
+    environment:
+      NODE_ENV: production
+      MYSQL_URL: mysql://mysql:3306/
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    networks:
+      - fe-tech
+      - mysql
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin12345  # 设置 root 用户的密码
+      MYSQL_DATABASE: fet-vue3-design-hooks  # 创建一个名为 my_database 的数据库
+      # MYSQL_USER: my_user  # 创建一个新用户
+      # MYSQL_PASSWORD: my_password  # 为新用户设置密码
+    volumes:
+      - mysql_data:/data/db
+    ports:
+      - '9900:3306'
+    networks:
+      - mysql
+volumes:
+  mysql_data:
+networks:
+  fe-tech:
+    external: true
+  mysql:
+    driver: bridge

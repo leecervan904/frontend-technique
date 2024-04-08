@@ -177,7 +177,7 @@ app.post('/product/delete', async (req, res) => {
   })
 })
 
-app.get('*', (req, res) => {
+app.get('*', (_, res) => {
   res.json({
     msg: 'hello!'
   })

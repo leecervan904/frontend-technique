@@ -1,0 +1,24 @@
+version: '3'
+services:
+  www-design-hooks:
+    image: leecervan/www-design-hooks:latest
+    platform: linux/arm64
+    restart: always
+    ports:
+      - '3030:3200'
+    environment:
+      NODE_ENV: production
+      MYSQL_URL: mysql://mysql:3306/
+    depends_on:
+      - mysql
+    links:
+      - mysql
+  mysql:
+    image: mysql
+    restart: always
+    volumes:
+      - mysql_data:/data/db
+    ports:
+      - '9900:3306'
+volumes:
+  mysql_data:

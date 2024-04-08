@@ -1,10 +1,12 @@
 import { ref, onMounted, watch, h } from 'vue'
-import { Message, MessageConfig, Button } from "@arco-design/web-vue";
+import { Message, Button } from "@arco-design/web-vue";
 import { type TableColumnData } from '@arco-design/web-vue'
 import { type ProductItem } from '../../../../server/main'
 
 import { useTableData } from './useTableData'
-import axios from 'axios'
+// import axios from 'axios'
+import { request } from '../../../utils/request'
+
 
 interface IForm {
   name: string
@@ -65,9 +67,9 @@ export function useProductTableData() {
         pageSize: pageInfo.value.pageSize,
       }
 
-      const res = await axios({
+      const res = await request({
         method: 'get',
-        url: '/api/product/page',
+        url: '/product/page',
         params,
       })
 
@@ -80,9 +82,9 @@ export function useProductTableData() {
 
   const handleDeleteSelection = async () => {
     try {
-      await axios({
+      await request({
         method: 'post',
-        url: '/api/product/delete',
+        url: '/product/delete',
         data: {
           ids: selectedData.value,
         },

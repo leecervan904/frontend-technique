@@ -1,0 +1,17 @@
+stages:
+  - build
+
+build_job:
+  stage: build
+  script:
+    - echo "Starting build process for the changed directory..."
+    - docker build -t my-image .
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "main"'
+      changes:
+        - 'path/to/your/project/app-a/*'
+      when: always
+    - if: '$CI_COMMIT_REF_NAME == "main"'
+      changes:
+        - 'path/to/your/project/app-b/*'
+      when: always

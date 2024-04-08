@@ -1,10 +1,11 @@
 import { ref, onMounted, watch } from 'vue'
-import { Message, MessageConfig } from "@arco-design/web-vue";
+import { Message } from "@arco-design/web-vue";
 import { type TableColumnData } from '@arco-design/web-vue'
 import { type UserItem } from '../../../../server/main'
 
 import { useTableData } from './useTableData'
-import axios from 'axios'
+// import axios from 'axios'
+import { request } from '../../../utils/request'
 
 interface IForm {
   name: string
@@ -66,9 +67,9 @@ export function useUserTableData() {
         pageSize: pageInfo.value.pageSize,
       }
 
-      const res = await axios({
+      const res = await request({
         method: 'get',
-        url: '/api/user/page',
+        url: '/user/page',
         params,
       })
 
@@ -81,9 +82,9 @@ export function useUserTableData() {
 
   const handleDeleteSelection = async () => {
     try {
-      await axios({
+      await request({
         method: 'post',
-        url: '/api/user/delete',
+        url: '/user/delete',
         data: {
           ids: selectedData.value,
         },
