@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: '/vue3-design-hooks/',
+  base: '/vue3-design-hooks/',
   envDir: './env',
   plugins: [vue()],
   resolve: {

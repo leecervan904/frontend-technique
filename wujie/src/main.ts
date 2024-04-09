@@ -5,6 +5,8 @@ import { setupRouter } from './router'
 
 import WujieVue from "wujie-vue3"
 
+console.log(import.meta.env)
+
 // import '@unocss/reset/normalize.css'
 import '@unocss/reset/tailwind.css'
 import 'virtual:uno.css'

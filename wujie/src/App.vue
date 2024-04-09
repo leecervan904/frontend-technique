@@ -4,6 +4,8 @@ import { useRouter } from 'vue-router'
 
 import { apps } from './apps'
 
+console.log(apps)
+
 const router = useRouter()
 
 const active = ref('/')

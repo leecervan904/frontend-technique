@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev:@vue3/design-hooks": "pnpm --filter @vue3/design-hooks dev",
     "dev:@react/router-v6": "pnpm --filter @react/router-v6 dev",
@@ -21,6 +22,8 @@
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
+    "@inquirer/checkbox": "^2.2.2",
+    "@inquirer/prompts": "^4.3.2",
     "@types/lodash-es": "^4.17.12"
   }
 }
