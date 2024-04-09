@@ -7,10 +7,11 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "start:dev": "tsx watch ./server/main",
     "start": "tsx ./server/main",
+    "start:dev": "tsx watch ./server/main",
     "postinstall": "prisma generate",
-    "db:push": "prisma db push"
+    "dev:db:push": "dotenv -e ./env/.env.local -- npx prisma db push",
+    "prod:db:push": "dotenv -e .env/.env.production.local -- npx prisma db push"
   },
   "dependencies": {
     "@arco-design/web-vue": "^2.54.6",

@@ -4,6 +4,8 @@ import App from './App.vue';
 import './style.css'
 import '@arco-design/web-vue/dist/arco.css';
 
+console.log(import.meta.env)
+
 declare global {
   interface Window {
     // 是否存在无界
