@@ -71,14 +71,6 @@ async function stepDeploy(buildApps) {
     // 解压所有 zip 包
     console.log('登录服务器...')
 
-    // console.log(`ssh ${remote} "
-    //     ${buildApps.map(app => `
-    //       cd ${dest}${app.fullname}/;
-    //       tar -zxf dist.tar.gz;
-    //     `).join(' ')};
-    //     exit;
-    //   "`);
-
     exec(`ssh ${remote} "
       ${buildApps.map(app => `
         cd ${dest}${app.fullname}/;
@@ -113,7 +105,7 @@ async function run() {
     })
 
   await stepBuild(buildApps)
-  // return
+
   await stepDeploy(buildApps)
 }
 
